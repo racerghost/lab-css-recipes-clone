@@ -1,0 +1,84 @@
+h1, body, html, main {
+  margin: 0;
+}
+/*Import the font and set the default size*/
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.main{
+  background-image: url("../images/apple-pie.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 94%;
+  margin: 10px auto;
+}
+article{
+  font-size: 1.2em;
+  font-weight: lighter;
+  
+}
+section{
+  width: 75%;
+  font-size: 0.75em;
+  font-weight: lighter;
+  margin: 5% auto; 
+  max-width: 1024px;
+}
+
+
+
+h1{
+  position: absolute;
+  color:#fffffd;
+  font-size: 3em;
+}
+
+h2{  
+  font-size: 1.1em;
+  margin: 25px 0;
+}
+
+ul,ol{
+  margin-left: -35px;
+}
+
+.lista-ingredients li{
+  list-style-type: none;
+  margin: 1px 0;
+}
+
+.lista-ingredients li:before{
+  content: "- "
+}
+
+.lista-directions {
+  counter-reset: listCounter;
+  list-style: none; 
+}
+
+.lista-directions li{
+  counter-increment: listCounter;
+  margin: 2px 0;
+}
+
+.lista-directions li:before{
+  content: counter(listCounter)") "
+}
+
+
+
+hr {
+  color:lightgrey;
+}
+
+.general-image{
+  display:flex;
+  height: 40px;
+  margin: 0 auto;
+}
